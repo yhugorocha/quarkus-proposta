@@ -24,7 +24,7 @@ public class ProposalMapper {
 
     public ProposalEntity toProposalEntity(ProposalRequestDTO proposalRequestDTO){
         return ProposalEntity.builder()
-                .customer(proposalRequestDTO.costumer())
+                .customer(proposalRequestDTO.customer())
                 .priceTonne(proposalRequestDTO.priceTonne())
                 .tonnes(proposalRequestDTO.tonnes())
                 .country(proposalRequestDTO.country())

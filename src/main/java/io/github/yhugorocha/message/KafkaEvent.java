@@ -12,7 +12,7 @@ public class KafkaEvent {
 
     private final Logger LOG = LoggerFactory.getLogger(this.getClass());
 
-    @Channel("proposal")
+    @Channel("proposal-out")
     Emitter<ProposalRequestDTO> proposalRequestEmitter;
 
     public void sendNewKafkaEvent(ProposalRequestDTO proposalRequestDTO){
